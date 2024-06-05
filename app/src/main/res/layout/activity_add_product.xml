@@ -1,0 +1,142 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    tools:context=".AddProduct"
+    android:orientation="vertical">
+
+    <TextView
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:gravity="center"
+        android:textSize="20dp"
+        android:textColor="@color/black"
+        android:textStyle="bold|italic"
+        android:text="Add New Product"/>
+
+    <androidx.cardview.widget.CardView
+        android:layout_width="400px"
+        android:layout_height="400px"
+        android:layout_gravity="center"
+        android:layout_marginTop="20dp"
+        android:layout_marginBottom="0dp"
+        app:cardBackgroundColor="#E8E7E7"
+        app:cardCornerRadius="10dp">
+
+        <ImageView
+            android:id="@+id/new_prod_img"
+            android:layout_width="380px"
+            android:layout_height="380px"
+            android:layout_gravity="center"
+            android:visibility="invisible"/>
+    </androidx.cardview.widget.CardView>
+
+    <com.google.android.material.button.MaterialButton
+        android:id="@+id/pick_image"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_gravity="center"
+        android:text="Pick Image"
+        android:textSize="10dp"
+        android:layout_marginTop="10dp"
+        android:layout_marginBottom="20dp"/>
+
+
+    <LinearLayout
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:orientation="horizontal">
+        <TextView
+            android:layout_width="wrap_content"
+            android:layout_height="match_parent"
+            android:layout_gravity="center_vertical"
+            android:layout_marginStart="40dp"
+            android:textSize="55px"
+            android:text="Category:"/>
+        <RadioGroup
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:orientation="vertical"
+            android:id="@+id/radio_group">
+            <RadioButton android:id="@+id/radio_shoes"
+                android:layout_width="wrap_content"
+                android:layout_height="30dp"
+                android:checked="true"
+                android:text="shoes"/>
+            <RadioButton android:id="@+id/radio_clothes"
+                android:layout_width="wrap_content"
+                android:layout_height="30dp"
+                android:text="clothes"/>
+            <RadioButton android:id="@+id/radio_furniture"
+                android:layout_width="wrap_content"
+                android:layout_height="30dp"
+                android:text="furniture"/>
+        </RadioGroup>
+    </LinearLayout>
+
+    <EditText
+        android:id="@+id/new_prod_id"
+        android:layout_width="300dp"
+        android:layout_height="wrap_content"
+        android:background="@drawable/edittext_background"
+        android:drawablePadding="14dp"
+        android:layout_marginTop="20dp"
+        android:layout_marginStart="40dp"
+        android:elevation="3dp"
+        android:hint="Product ID"
+        android:padding="13dp"
+        android:textColor="#000000" />
+
+    <EditText
+        android:id="@+id/new_prod_name"
+        android:layout_width="300dp"
+        android:layout_height="wrap_content"
+        android:background="@drawable/edittext_background"
+        android:drawablePadding="14dp"
+        android:layout_marginTop="20dp"
+        android:layout_marginStart="40dp"
+        android:elevation="3dp"
+        android:hint="Product Name"
+        android:padding="13dp"
+        android:textColor="#000000" />
+
+    <EditText
+        android:id="@+id/new_prod_description"
+        android:layout_width="300dp"
+        android:layout_height="wrap_content"
+        android:background="@drawable/edittext_background"
+        android:drawablePadding="14dp"
+        android:layout_marginTop="20dp"
+        android:layout_marginStart="40dp"
+        android:elevation="3dp"
+        android:hint="Product Description"
+        android:padding="13dp"
+        android:textColor="#000000" />
+
+    <EditText
+        android:id="@+id/new_prod_price"
+        android:layout_width="300dp"
+        android:layout_height="wrap_content"
+        android:background="@drawable/edittext_background"
+        android:drawablePadding="14dp"
+        android:layout_marginTop="20dp"
+        android:layout_marginStart="40dp"
+        android:elevation="3dp"
+        android:hint="Product Price"
+        android:padding="13dp"
+        android:textColor="#000000" />
+
+
+    <com.google.android.material.button.MaterialButton
+        android:id="@+id/add_product"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_gravity="center"
+        android:text="Save Product"
+        android:layout_marginTop="20dp"/>
+
+
+
+</LinearLayout>
